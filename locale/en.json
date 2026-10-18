@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Account Switcher",
+    "description": "Keeps several DeepSeek accounts in a local vault and switches the active credential with one click."
+  }
+}

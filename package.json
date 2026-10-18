@@ -1,0 +1,50 @@
+{
+  "name": "@local/account-switcher",
+  "version": "1.0.0",
+  "description": "DeepSeek Harness 运维级多账号管理与高可用平滑切换插件 (DevOps & SRE-grade Account Switcher)",
+  "type": "module",
+  "homepage": "https://github.com/keerzzz/dsh-account-switcher",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keerzzz/dsh-account-switcher.git"
+  },
+  "author": "keerzzz",
+  "license": "MIT",
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "account-switcher",
+    "sre",
+    "devops",
+    "high-availability",
+    "observability"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  }
+}

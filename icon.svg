@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Account switcher">
+  <g fill="none" stroke="#247bbf" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="24" cy="24" r="9" />
+    <path d="M10 50c0-7.7 6.3-14 14-14s14 6.3 14 14" />
+    <path d="M42 20h12" />
+    <path d="M48 14l6 6-6 6" />
+    <path d="M54 44H42" />
+    <path d="M48 38l-6 6 6 6" />
+  </g>
+</svg>
